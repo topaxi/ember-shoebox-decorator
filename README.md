@@ -1,12 +1,30 @@
 # ember-shoebox-decorator
 
-This README outlines the details of collaborating on this Ember addon.
+A decorator for the Ember FastBoot shoebox.
+
+Puts the returned value from the model hooks into the shoebox and
+fetches the data on the initial transition.
+
+Works with any route model hook (`beforeModel`, `model` and `afterModel`).
+
+## Usage
+
+```javascript
+import { shoeboxModel } from 'ember-shoebox-decorator';
+
+export default Ember.Route.extend({
+  @shoeboxModel
+  model() {
+    return this.store.findAll('post');
+  },
+});
+```
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-shoebox-decorator`
-* `npm install`
+* `ember install ember-shoebox-decorator`
+* `yarn add --dev babel-plugin-transform-decorators-legacy`
+* Add `babel-plugin-transform-decorators-legacy` to the babel plugins in `ember-cli-build.js`.
 
 ## Running
 
