@@ -7,15 +7,18 @@ fetches the data on the initial transition.
 
 Works with any route model hook (`beforeModel`, `model` and `afterModel`).
 
+NOTE: Currently not working with Ember Data.
+
 ## Usage
 
 ```javascript
 import { shoeboxModel } from 'ember-shoebox-decorator';
+import fetch from 'ember-fetch';
 
 export default Ember.Route.extend({
   @shoeboxModel
   model() {
-    return this.store.findAll('post');
+    return fetch('/api/v1/posts').then(res => res.json());
   },
 });
 ```
