@@ -1,6 +1,6 @@
 {
   "name": "ember-shoebox-decorator",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A decorator for the Ember FastBoot shoebox.",
   "keywords": ["ember-addon", "fastboot", "shoebox"],
   "repository": "https://github.com/topaxi/ember-shoebox-decorator.git",
