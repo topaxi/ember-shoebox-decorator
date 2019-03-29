@@ -9,6 +9,12 @@ Works with any route model hook (`beforeModel`, `model` and `afterModel`).
 
 NOTE: Currently not working with Ember Data.
 
+## Installation
+
+```bash
+ember install ember-shoebox-decorator
+```
+
 ## Usage
 
 ```javascript
@@ -23,25 +29,6 @@ export default Ember.Route.extend({
 });
 ```
 
-## Installation
+## License
 
-* `ember install ember-shoebox-decorator`
-* `yarn add --dev babel-plugin-transform-decorators-legacy`
-* Add `babel-plugin-transform-decorators-legacy` to the babel plugins in `ember-cli-build.js`.
-
-## Running
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+This project is licensed under the [MIT License](LICENSE.md).
