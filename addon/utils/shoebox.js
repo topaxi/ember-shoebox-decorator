@@ -4,7 +4,7 @@ import { resolve } from 'rsvp';
 
 export function shoeboxModelDecorator(f) {
   let initial = true;
-  let original = f.descriptor.value;
+  let { value: original } = f.descriptor;
 
   f.descriptor.value = function shoeboxModel() {
     if (!initial) return original.apply(this, arguments);
